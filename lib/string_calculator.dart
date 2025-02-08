@@ -3,7 +3,7 @@ class StringCalculator {
     if (numbers.isEmpty) {
       return 0;
     }
-    var nums = numbers.split(',').map((n) => int.parse(n)).toList();
+    var nums = numbers.split(RegExp(r'[,\n]')).map((n) => int.parse(n)).toList();
     return nums.reduce((sum, n) => sum + n);
   }
 }

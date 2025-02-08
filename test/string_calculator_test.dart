@@ -17,4 +17,8 @@ test('two numbers should return their sum', () {
   expect(StringCalculator.add('10,20'), 30);
 });
 
+test('handle newlines as delimiters', () {
+  expect(StringCalculator.add('1\n2,3'), 6);
+});
+
 }
