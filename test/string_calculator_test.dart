@@ -25,4 +25,8 @@ test('handle custom delimiters', () {
   expect(StringCalculator.add('//;\n1;2'), 3);
   expect(StringCalculator.add('//|\n1|2|3'), 6);
 });
+
+test('throw exception for negative numbers', () {
+  expect(() => StringCalculator.add('1,-2,3'), throwsA(isA<FormatException>()));
+});
 }
