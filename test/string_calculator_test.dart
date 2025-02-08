@@ -1,8 +1,16 @@
-import 'package:string_calculator/string_calculator.dart';
 import 'package:test/test.dart';
+import 'package:string_calculator/string_calculator.dart';
 
 void main() {
-  test('calculate', () {
-    expect(calculate(), 42);
+  test('empty string should return 0', () {
+    expect(StringCalculator.add(''), 0);
   });
+
+
+  test('single number should return the number', () {
+  expect(StringCalculator.add('1'), 1);
+  expect(StringCalculator.add('5'), 5);
+});
+
+
 }
