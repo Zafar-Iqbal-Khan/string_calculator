@@ -12,5 +12,9 @@ void main() {
   expect(StringCalculator.add('5'), 5);
 });
 
+test('two numbers should return their sum', () {
+  expect(StringCalculator.add('1,2'), 3);
+  expect(StringCalculator.add('10,20'), 30);
+});
 
 }
