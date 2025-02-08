@@ -18,6 +18,7 @@ class StringCalculator {
       throw FormatException('Negatives not allowed: $negatives');
     }
 
+    nums = nums.where((n) => n <= 1000).toList();
     return nums.reduce((sum, n) => sum + n);
   }
 }

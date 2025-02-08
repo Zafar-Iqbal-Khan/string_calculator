@@ -29,4 +29,8 @@ test('handle custom delimiters', () {
 test('throw exception for negative numbers', () {
   expect(() => StringCalculator.add('1,-2,3'), throwsA(isA<FormatException>()));
 });
+
+test('ignore numbers greater than 1000', () {
+  expect(StringCalculator.add('2,1001,6'), 8);
+});
 }
