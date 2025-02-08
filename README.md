@@ -20,7 +20,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/Zafar-Iqbal-Khan/string_calculator
-cd string-calculator-dart
+cd string_calculator
 ```
 
 Install dependencies:
