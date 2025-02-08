@@ -63,7 +63,7 @@ dart test
 
 ## Project Structure
 ```plaintext
-string-calculator-dart/
+string_calculator/
 ├── bin/
 │   └── string_calculator.dart       # CLI entry point
 ├── lib/
