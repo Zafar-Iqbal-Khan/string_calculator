@@ -21,4 +21,8 @@ test('handle newlines as delimiters', () {
   expect(StringCalculator.add('1\n2,3'), 6);
 });
 
+test('handle custom delimiters', () {
+  expect(StringCalculator.add('//;\n1;2'), 3);
+  expect(StringCalculator.add('//|\n1|2|3'), 6);
+});
 }

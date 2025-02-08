@@ -2,9 +2,9 @@ import 'dart:io';
 import 'package:string_calculator/string_calculator.dart';
 
 void main() {
-  print("Enter numbers separated by commas or newlines (press Enter after each line, and Ctrl+Z to finish):");
+    print("Enter numbers separated by commas or newlines (press Enter after each line, and Ctrl+D to finish):");
+  print("To use a custom delimiter, enter in this format: `//[delimiter]\\n[numbers]` (e.g., `//;\n1;2;3`).");
 
-  // Read multiple lines of input
   String input = '';
   while (true) {
     String? line = stdin.readLineSync();
